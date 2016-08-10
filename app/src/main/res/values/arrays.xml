@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="attending_status">
+        <item>Invited</item>
+        <item>Attending</item>
+        <item>Maybe</item>
+        <item>Not Attending</item>
+    </string-array>
+
+</resources>

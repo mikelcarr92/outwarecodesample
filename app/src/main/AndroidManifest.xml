@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.mcarr.officialsmooviesapp"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".SmooviesApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.MainLoginActivity"
+            android:theme="@style/AppTheme.LoginTheme"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".services.GCMListener">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activities.CreateAccountActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Normal"/>
+
+        <activity
+            android:name=".activities.AddGroupActivity"
+            android:label="Join a Group"
+            android:theme="@style/AppTheme.Normal"/>
+
+        <activity
+            android:name=".activities.CreateGroupActivity"
+            android:label="Create a Group"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activities.MyGroupsActivity"
+            android:label="My Groups"
+            android:theme="@style/AppTheme.Normal"/>
+
+        <activity
+            android:name=".activities.GroupDetailActivity"
+            android:label="Group Detail"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".activities.EventDetailActivity"
+            android:label="Group Detail"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".activities.JoinGroupActivity"
+            android:label="Join Group"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activities.MyProfileActivity"
+            android:label="My Profile"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activities.CreateEventActivity"
+            android:label="Create Event"
+            android:theme="@style/AppTheme"/>
+
+        <service android:enabled="true" android:name=".services.UploadService" />
+
+    </application>
+</manifest>
+
+    <!--android:name=".dagger.DaggerApplication"-->

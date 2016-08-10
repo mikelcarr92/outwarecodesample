@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical|center_horizontal"
+              android:paddingLeft="50dp"
+              android:paddingRight="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMOOVIES"
+        android:id="@+id/textView"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_login_email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:text="test@gmail.com"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_login_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="10dp"
+            android:text="123"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:id="@+id/activity_login_dologin_button"
+        android:layout_marginTop="10dp"
+        android:theme="@style/AppTheme.Button.Login"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Need an account?"
+        android:id="@+id/activity_login_create_account_button"
+        />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_activity_main_groups"
+          android:icon="@drawable/ic_people_white_24dp"
+          android:title="@string/menu_activity_main_my_groups"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menu_activity_main_my_profile"
+          android:title="@string/menu_activity_main_my_profile"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_activity_main_settings"
+          android:title="@string/menu_activity_main_settings"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_activity_main_logout"
+          android:title="@string/menu_activity_main_logout"
+          app:showAsAction="never"/>
+
+</menu>

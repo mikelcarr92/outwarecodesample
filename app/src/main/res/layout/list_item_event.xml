@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="4dp"
+        android:foreground="?android:selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/list_item_event_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:gravity="center_vertical"
+                android:id="@+id/list_item_event_background"
+                android:background="#333333">
+
+                <LinearLayout
+                    android:id="@+id/list_item_event_calendar"
+                    android:transitionName="calendarView"
+                    android:orientation="vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="May"
+                        android:transitionName="calendarViewMonth"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/list_item_event_month"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/rounded_top_red_rect"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="31"
+                        android:transitionName="calendarViewDay"
+                        android:id="@+id/list_item_event_day"
+                        android:includeFontPadding="false"
+                        android:textSize="22sp"
+                        android:background="@drawable/rounded_grey_rect"
+                        android:textColor="@color/abc_primary_text_material_light"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/list_item_event_name"
+                        android:textColor="@color/abc_primary_text_material_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/list_item_event_details"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scott's house"
+                        android:id="@+id/list_item_event_location"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/list_item_event_fade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#33000000"/>
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Normal" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="colorPrimary">@color/colorRedNew</item>
+        <item name="colorPrimaryDark">@color/colorRedNewDark</item>
+        <item name="colorAccent">@color/colorRedNew</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="colorPrimary">@color/colorRedNew</item>
+        <item name="colorPrimaryDark">@color/colorRedNewDark</item>
+        <item name="colorAccent">@color/colorRedNew</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.LoginTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="colorPrimary">@color/colorRedNew</item>
+        <item name="colorPrimaryDark">@color/colorRedNewDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Button.Login" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorLogin</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat"/>
+
+    <style name="AppTheme.Button.Attending" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="AppTheme.Button.MaybeAttending" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="AppTheme.Button.NotAttending" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorRedNew</item>
+    </style>
+
+</resources>
